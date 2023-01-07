@@ -1,0 +1,15 @@
+utwórz klase Animal, która ma zawierać
+String species
+String name;
+Double weight;
+Boolean alive;
+
+utwórz konstruktor który wymusza podanie gatunku
+dodaj metodę feed(), która zwiększa masę zwierzęcia o 0.5kg;
+
+dodaj kolejną metodę takeForAWalk(), która zmniejsza masę zwierzęcia o 0.5kg
+
+jesli masa spadnie do 0 albo ponizej zwierze umiera
+jesli sprobojesz wyprowadzić lub nakarmic martwe zwierze program wyswietla wyzwiska
+
+zrobić zadania do zadania 6 włącznie do następnych zajęć z maila
