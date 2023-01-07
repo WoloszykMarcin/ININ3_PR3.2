@@ -15,5 +15,10 @@ public class Main {
         fiat.drive();
         fiat.drive();
         fiat.drive();
+
+        Human kacper = new Human("Kacper");
+        kacper.feed();
+        System.out.println(kacper.getWeight());
+        System.out.println(kacper.getSpecies());
     }
 }

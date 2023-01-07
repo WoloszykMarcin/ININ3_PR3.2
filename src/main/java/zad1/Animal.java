@@ -1,11 +1,17 @@
 package zad1;
 
 public class Animal {
-    String species;
-    String name;
-    Double weight;
-    Boolean alive;
+    private String species;
+    private String name;
+    private double weight;
+    private boolean alive;
 
+    public Animal() {
+    }
+
+    public Animal(String species) {
+        this.species = species;
+    }
 
     public Animal(String species, Double weight) {
         this.species = species;
@@ -40,6 +46,22 @@ public class Animal {
                 System.out.println("Twoje zwierze jest martwe");
             }
         }
+    }
+
+    public String getSpecies() {
+        return species;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public boolean isAlive() {
+        return alive;
     }
 
     @Override

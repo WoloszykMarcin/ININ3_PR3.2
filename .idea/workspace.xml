@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="421e3796-b350-45d9-a6f7-5c45c4a3f0a1" name="Changes" comment="Runner update" />
+    <list default="true" id="421e3796-b350-45d9-a6f7-5c45c4a3f0a1" name="Changes" comment="Zad 2 added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zad1/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zad1/Animal.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +48,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Runner">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ININ3_PR3.2" />
@@ -66,8 +71,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Runner" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -80,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670069752947</updated>
       <workItem from="1670069754499" duration="4055000" />
-      <workItem from="1673111624483" duration="987000" />
+      <workItem from="1673111624483" duration="2190000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1670069819685</created>
@@ -117,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673112482633</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Zad 2 added">
+      <created>1673112764482</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673112764482</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +150,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Car class added" />
     <MESSAGE value="Runner update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Runner update" />
+    <MESSAGE value="Zad 2 added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zad 2 added" />
   </component>
 </project>
