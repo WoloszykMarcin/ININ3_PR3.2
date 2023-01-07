@@ -17,5 +17,6 @@ public class Runner {
         animal.takeForAWalk();
         animal.takeForAWalk();
         animal.feed();
+        animal.feed();
     }
 }
