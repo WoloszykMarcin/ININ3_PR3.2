@@ -1,5 +1,4 @@
 import devices.Car;
-import zad1.Animal;
 
 import java.util.Date;
 
@@ -11,12 +10,23 @@ public class Human extends Animal {
     private Animal pet;
     private double salary;
     private double weight;
+    private double cash;
 
     public Human(String firstName) {
         super("homo sapiens");
         this.weight = 70.0;
         this.salary = 111110.0;
         this.firstName = firstName;
+    }
+
+    public Human(String firstName, String lastName, Car car, Animal pet, double salary, double weight, double cash) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.car = car;
+        this.pet = pet;
+        this.salary = salary;
+        this.weight = weight;
+        this.cash = cash;
     }
 
     public String getFirstName() {
@@ -33,6 +43,14 @@ public class Human extends Animal {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public double getCash() {
+        return cash;
+    }
+
+    public void setCash(double cash) {
+        this.cash = cash;
     }
 
     public Car getCar() {

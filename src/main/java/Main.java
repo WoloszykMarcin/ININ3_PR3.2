@@ -44,5 +44,11 @@ public class Main {
 
         huracan.turnOn();
 
+        Animal pet = new Human("czlowiek");
+        Human buyer = new Human("Buyer", "buyer", huracan, pet, 10_000, 70.0, 40_000);
+        Human seller = new Human("Seller", "seller", huracan, null, 10_000, 50.0, 10_000);
+
+        buyer.sell(seller, buyer, 50_000);
+
     }
 }

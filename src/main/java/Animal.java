@@ -1,6 +1,4 @@
-package zad1;
-
-public class Animal {
+public class Animal implements Salleable {
     private String species;
     private String name;
     private double weight;
@@ -72,5 +70,22 @@ public class Animal {
                 ", weight=" + weight +
                 ", alive=" + alive +
                 '}';
+    }
+
+    @Override
+    public void sell(Human seller, Human buyer, double price) {
+        if (this instanceof Human)
+            System.out.println("Zakaz handlu ludzmi");
+        else if (seller.getPet() != this)
+            System.out.println("Sprzedawca nie ma takiego zwierzecia");
+        else if (buyer.getCash() < price)
+            System.out.println("Kupujacy nie posiada wystarczajacej ilosci gotowki");
+        else {
+            buyer.setCash(buyer.getCash() - price);
+            seller.setCash(seller.getCash() + price);
+            buyer.setPet(this);
+            seller.setPet(null);
+            System.out.println(buyer.getFirstName() + " wlasnie zakupil" + this.species + " od" + seller.getFirstName() + " za " + price);
+        }
     }
 }
