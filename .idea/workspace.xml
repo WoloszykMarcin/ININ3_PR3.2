@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="421e3796-b350-45d9-a6f7-5c45c4a3f0a1" name="Changes" comment="inheritance">
-      <change afterPath="$PROJECT_DIR$/src/main/java/device/app/DeviceRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/device/model/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/device/model/Device.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/device/model/Phone.java" afterDir="false" />
+    <list default="true" id="421e3796-b350-45d9-a6f7-5c45c4a3f0a1" name="Changes" comment="inheritance update, Device.java, Phone.java, Car.java added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zad1/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zad1/AnimalRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zad2/Runner.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +50,20 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.DeviceRunner">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="AnimalRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="zad1.AnimalRunner" />
+      <module name="ININ3_PR3.2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zad1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DeviceRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="device.app.DeviceRunner" />
       <module name="ININ3_PR3.2" />
@@ -69,24 +84,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="zad1.Runner" />
-      <module name="ININ3_PR3.2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="zad1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DeviceRunner" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Runner" />
+        <item itemvalue="Application.DeviceRunner" />
+        <item itemvalue="Application.AnimalRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -99,7 +101,8 @@
       <option name="presentableId" value="Default" />
       <updated>1670069752947</updated>
       <workItem from="1670069754499" duration="4055000" />
-      <workItem from="1673111624483" duration="2790000" />
+      <workItem from="1673111624483" duration="3973000" />
+      <workItem from="1674316442931" duration="993000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1670069819685</created>
@@ -150,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673114400693</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="inheritance update, Device.java, Phone.java, Car.java added">
+      <created>1673115241118</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673115241118</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +183,7 @@
     <MESSAGE value="Runner update" />
     <MESSAGE value="Zad 2 added" />
     <MESSAGE value="inheritance" />
-    <option name="LAST_COMMIT_MESSAGE" value="inheritance" />
+    <MESSAGE value="inheritance update, Device.java, Phone.java, Car.java added" />
+    <option name="LAST_COMMIT_MESSAGE" value="inheritance update, Device.java, Phone.java, Car.java added" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 package zad1;
 
-public class Runner {
+public class AnimalRunner {
     public static void main(String[] args) {
         Animal animal = new Animal("Kot", "Rick", 1.0, true);
 

@@ -20,5 +20,11 @@ public class Main {
         kacper.feed();
         System.out.println(kacper.getWeight());
         System.out.println(kacper.getSpecies());
+
+
+        Human human = new Human("Marcin");
+        human.setCar(new Car("Mercedes", "AMG GTR PRO", 2022));
+
+        System.out.println(human.getCar());
     }
 }

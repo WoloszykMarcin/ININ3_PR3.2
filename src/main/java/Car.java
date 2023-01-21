@@ -11,8 +11,51 @@ public class Car {
         this.millage = 0.0;
     }
 
+
+    public String getProducer() {
+        return producer;
+    }
+
+    public void setProducer(String producer) {
+        this.producer = producer;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public Integer getYearOfProduction() {
+        return yearOfProduction;
+    }
+
+    public void setYearOfProduction(Integer yearOfProduction) {
+        this.yearOfProduction = yearOfProduction;
+    }
+
+    public Double getMillage() {
+        return millage;
+    }
+
+    public void setMillage(Double millage) {
+        this.millage = millage;
+    }
+
     public void drive() {
         this.millage += 10.0;
         System.out.println("Aktualny przebieg to: " + this.millage);
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "producer='" + producer + '\'' +
+                ", model='" + model + '\'' +
+                ", yearOfProduction=" + yearOfProduction +
+                ", millage=" + millage +
+                '}';
     }
 }
