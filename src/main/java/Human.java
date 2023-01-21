@@ -1,5 +1,7 @@
 import zad1.Animal;
 
+import java.util.Date;
+
 public class Human extends Animal {
 
     private String firstName;
@@ -49,11 +51,20 @@ public class Human extends Animal {
     }
 
     public double getSalary() {
+        Date date = new Date();
+        System.out.println("Data pobrania wypłaty" + date + " Wartość: " + salary);
         return salary;
     }
 
     public void setSalary(double salary) {
-        this.salary = salary;
+        if (salary < 0)
+            System.out.println("Ujemna wartość wypłaty");
+        else {
+            System.out.println("nowe dane zostaly wyslane do systemu ksiegowego");
+            System.out.println("konieczne jest odebranie aneksu do umowy od Pani Hani z kadr");
+            System.out.println("ZUS i US zostały powiadomione o zmiany wyplaty, nie ma sensu ukrywac dochodu");
+            this.salary = salary;
+        }
     }
 
     @Override

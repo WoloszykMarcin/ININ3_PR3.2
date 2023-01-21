@@ -22,9 +22,14 @@ public class Main {
         System.out.println(kacper.getSpecies());
 
 
-        Human human = new Human("Marcin");
+        Human human = new Human("Marek");
         human.setCar(new Car("Mercedes", "AMG GTR PRO", 2022));
 
         System.out.println(human.getCar());
+
+        human.setSalary(50000);
+        System.out.println(human.getSalary());
+
+
     }
 }
