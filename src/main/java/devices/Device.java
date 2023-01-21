@@ -1,9 +1,9 @@
 package devices;
 
-public class Device {
-    private String producer;
-    private String model;
-    private int yearOfProducer;
+public abstract class Device {
+    private final String producer;
+    private final String model;
+    private final int yearOfProducer;
 
     public Device(String producer, String model, int yearOfProducer) {
         this.producer = producer;
@@ -11,6 +11,7 @@ public class Device {
         this.yearOfProducer = yearOfProducer;
     }
 
+    public abstract void turnOn();
     @Override
     public String toString() {
         return getClass().getSimpleName() + "{" +

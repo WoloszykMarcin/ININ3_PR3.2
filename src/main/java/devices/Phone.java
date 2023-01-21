@@ -10,6 +10,16 @@ public class Phone extends Device {
         this.os = os;
     }
 
+
+    @Override
+    public void turnOn() {
+        System.out.println("odpalam przycisk");
+        System.out.println("trzymam przycisk");
+        System.out.println("czekam");
+        System.out.println("widze logo");
+        System.out.println("urzadzenie wlaczone");
+    }
+
     @Override
     public String toString() {
         return super.toString() +

@@ -2,7 +2,7 @@ package devices;
 
 import java.util.Objects;
 
-public class Car {
+public class Car extends Device{
     private String producer;
     private String model;
     private Integer yearOfProduction;
@@ -10,29 +10,46 @@ public class Car {
     private double value;
     private String fuelType;
 
-    public Car(String producer, String model, Integer yearOfProduction) {
-        this.producer = producer;
-        this.model = model;
-        this.yearOfProduction = yearOfProduction;
-        this.millage = 0.0;
+    public Car(String producer, String model, int yearOfProducer) {
+        super(producer, model, yearOfProducer);
     }
 
-    public Car(String producer, String model, Integer yearOfProduction, Double millage, double value) {
-        this.producer = producer;
-        this.model = model;
-        this.yearOfProduction = yearOfProduction;
+    public Car(String producer, String model, int yearOfProducer, Double millage, double value) {
+        super(producer, model, yearOfProducer);
         this.millage = millage;
         this.value = value;
     }
 
-    public Car(String producer, String model, Integer yearOfProduction, Double millage, double value, String fuelType) {
-        this.producer = producer;
-        this.model = model;
-        this.yearOfProduction = yearOfProduction;
+    public Car(String producer, String model, int yearOfProducer, Double millage, double value, String fuelType) {
+        super(producer, model, yearOfProducer);
         this.millage = millage;
         this.value = value;
         this.fuelType = fuelType;
     }
+
+    //    public Car(String producer, String model, Integer yearOfProduction) {
+//        this.producer = producer;
+//        this.model = model;
+//        this.yearOfProduction = yearOfProduction;
+//        this.millage = 0.0;
+//    }
+//
+//    public Car(String producer, String model, Integer yearOfProduction, Double millage, double value) {
+//        this.producer = producer;
+//        this.model = model;
+//        this.yearOfProduction = yearOfProduction;
+//        this.millage = millage;
+//        this.value = value;
+//    }
+//
+//    public Car(String producer, String model, Integer yearOfProduction, Double millage, double value, String fuelType) {
+//        this.producer = producer;
+//        this.model = model;
+//        this.yearOfProduction = yearOfProduction;
+//        this.millage = millage;
+//        this.value = value;
+//        this.fuelType = fuelType;
+//    }
 
     public String getProducer() {
         return producer;
@@ -79,6 +96,7 @@ public class Car {
         System.out.println("Aktualny przebieg to: " + this.millage);
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -90,6 +108,12 @@ public class Car {
     @Override
     public int hashCode() {
         return Objects.hash(getProducer(), getModel(), getYearOfProduction(), getMillage(), value);
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("Klikam Start / Stop");
+        System.out.println("odpala");
     }
 
     @Override
