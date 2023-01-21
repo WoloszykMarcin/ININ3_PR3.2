@@ -1,9 +1,14 @@
+package devices;
+
+import java.util.Objects;
+
 public class Car {
-    String producer;
-    String model;
-    Integer yearOfProduction;
-    Double millage;
-    double value;
+    private String producer;
+    private String model;
+    private Integer yearOfProduction;
+    private Double millage;
+    private double value;
+    private String fuelType;
 
     public Car(String producer, String model, Integer yearOfProduction) {
         this.producer = producer;
@@ -18,6 +23,15 @@ public class Car {
         this.yearOfProduction = yearOfProduction;
         this.millage = millage;
         this.value = value;
+    }
+
+    public Car(String producer, String model, Integer yearOfProduction, Double millage, double value, String fuelType) {
+        this.producer = producer;
+        this.model = model;
+        this.yearOfProduction = yearOfProduction;
+        this.millage = millage;
+        this.value = value;
+        this.fuelType = fuelType;
     }
 
     public String getProducer() {
@@ -52,14 +66,35 @@ public class Car {
         this.millage = millage;
     }
 
+    public double getValue() {
+        return value;
+    }
+
+    public void setValue(double value) {
+        this.value = value;
+    }
+
     public void drive() {
         this.millage += 10.0;
         System.out.println("Aktualny przebieg to: " + this.millage);
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Car)) return false;
+        Car car = (Car) o;
+        return Double.compare(car.value, value) == 0 && Objects.equals(getProducer(), car.getProducer()) && Objects.equals(getModel(), car.getModel()) && Objects.equals(getYearOfProduction(), car.getYearOfProduction()) && Objects.equals(getMillage(), car.getMillage());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getProducer(), getModel(), getYearOfProduction(), getMillage(), value);
+    }
+
+    @Override
     public String toString() {
-        return "Car{" +
+        return "devices.Car{" +
                 "producer='" + producer + '\'' +
                 ", model='" + model + '\'' +
                 ", yearOfProduction=" + yearOfProduction +

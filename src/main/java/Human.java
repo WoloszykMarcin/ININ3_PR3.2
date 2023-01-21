@@ -1,3 +1,4 @@
+import devices.Car;
 import zad1.Animal;
 
 import java.util.Date;
@@ -39,14 +40,14 @@ public class Human extends Animal {
     }
 
     public void setCar(Car car) {
-        if (this.salary > car.value) {
-            System.out.println("Auto zostało kupione za gotowke");
+        if (this.salary > car.getValue()) {
+            System.out.println("Auto zostalo kupione za gotowke");
             this.car = car;
-        } else if (this.salary > car.value / 12) {
-            System.out.println("udało się kupić na kredyt (no trudno)");
+        } else if (this.salary > car.getValue() / 12) {
+            System.out.println("udalo się kupić na kredyt (no trudno)");
             this.car = car;
         } else
-            System.out.println("zapisz sie na studia i znajdz nową robote albo idz po\n" + "podwyzke");
+            System.out.println("zapisz sie na studia i znajdz nowa robote albo idz po\n" + "podwyzke");
     }
 
     public Animal getPet() {
@@ -81,5 +82,17 @@ public class Human extends Animal {
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", car=" + car +
+                ", pet=" + pet +
+                ", salary=" + salary +
+                ", weight=" + weight +
+                '}';
     }
 }

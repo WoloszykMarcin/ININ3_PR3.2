@@ -1,4 +1,4 @@
-package device.model;
+package devices;
 
 public class Device {
     private String producer;

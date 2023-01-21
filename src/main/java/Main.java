@@ -1,16 +1,18 @@
+import devices.Car;
+
 public class Main {
     public static void main(String[] args) {
         Car passat = new Car("VW", "passerati", 2001);
-        passat.millage = 78000.0;
-        System.out.println(passat.producer);
-        System.out.println(passat.model);
-        System.out.println(passat.yearOfProduction);
+        passat.setMillage(78000.0);
+        System.out.println(passat.getProducer());
+        System.out.println(passat.getModel());
+        System.out.println(passat.getYearOfProduction());
 
         Car fiat = new Car("fiat", "bravo", 2010);
-        fiat.millage = 312321.5;
+        fiat.setMillage(312321.5);
 
-        System.out.println("Model auta: " + fiat.model);
-        System.out.println("Przebieg: " + fiat.millage);
+        System.out.println("Model auta: " + fiat.getModel());
+        System.out.println("Przebieg: " + fiat.getMillage());
 
         fiat.drive();
         fiat.drive();
@@ -33,6 +35,12 @@ public class Main {
         Car huracan = new Car("Lamborghini", "Huracan", 2022, 5.0, 1_700_000);
         human.setCar(huracan);
 
+        Car huracan2 = new Car("Lamborghini", "Huracan", 2022, 5.0, 1_700_000);
+        System.out.println(huracan == huracan2); // porownanie hashcode zwraca false
+        System.out.println(huracan.equals(huracan2)); // porownanie equals zwraca true
+
+        System.out.println(huracan);
+        System.out.println(huracan2);
 
     }
 }

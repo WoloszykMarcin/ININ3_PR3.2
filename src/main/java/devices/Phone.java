@@ -1,4 +1,4 @@
-package device.model;
+package devices;
 
 public class Phone extends Device {
     private double screenSize;

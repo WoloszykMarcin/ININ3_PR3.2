@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="421e3796-b350-45d9-a6f7-5c45c4a3f0a1" name="Changes" comment="Zadanie 3 i 4">
+    <list default="true" id="421e3796-b350-45d9-a6f7-5c45c4a3f0a1" name="Changes" comment="Zadanie 5">
+      <change afterPath="$PROJECT_DIR$/src/main/java/devices/DeviceRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/device/app/DeviceRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/device/model/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/device/model/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/device/model/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Phone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +53,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyProjects\ININ3_PR3.2\src\main\java\devices" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="AnimalRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="zad1.AnimalRunner" />
@@ -63,11 +73,11 @@
       </method>
     </configuration>
     <configuration name="DeviceRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="device.app.DeviceRunner" />
+      <option name="MAIN_CLASS_NAME" value="devices.app.DeviceRunner" />
       <module name="ININ3_PR3.2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="device.app.*" />
+          <option name="PATTERN" value="devices.app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,7 +95,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.DeviceRunner" />
+        <item itemvalue="Application.devices.app.DeviceRunner" />
         <item itemvalue="Application.AnimalRunner" />
       </list>
     </recent_temporary>
@@ -100,7 +110,7 @@
       <updated>1670069752947</updated>
       <workItem from="1670069754499" duration="4055000" />
       <workItem from="1673111624483" duration="3973000" />
-      <workItem from="1674316442931" duration="2320000" />
+      <workItem from="1674316442931" duration="3110000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1670069819685</created>
@@ -172,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674318144645</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Zadanie 5">
+      <created>1674318797477</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674318797477</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +215,7 @@
     <MESSAGE value="inheritance update, Device.java, Phone.java, Car.java added" />
     <MESSAGE value="zad 1, 2" />
     <MESSAGE value="Zadanie 3 i 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 3 i 4" />
+    <MESSAGE value="Zadanie 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 5" />
   </component>
 </project>
