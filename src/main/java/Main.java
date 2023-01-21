@@ -30,6 +30,9 @@ public class Main {
         human.setSalary(50000);
         System.out.println(human.getSalary());
 
+        Car huracan = new Car("Lamborghini", "Huracan", 2022, 5.0, 1_700_000);
+        human.setCar(huracan);
+
 
     }
 }

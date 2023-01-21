@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="421e3796-b350-45d9-a6f7-5c45c4a3f0a1" name="Changes" comment="zad 1, 2">
+    <list default="true" id="421e3796-b350-45d9-a6f7-5c45c4a3f0a1" name="Changes" comment="Zadanie 3 i 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
@@ -99,7 +100,7 @@
       <updated>1670069752947</updated>
       <workItem from="1670069754499" duration="4055000" />
       <workItem from="1673111624483" duration="3973000" />
-      <workItem from="1674316442931" duration="1632000" />
+      <workItem from="1674316442931" duration="2320000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1670069819685</created>
@@ -164,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674317532092</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Zadanie 3 i 4">
+      <created>1674318144645</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674318144645</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +197,7 @@
     <MESSAGE value="inheritance" />
     <MESSAGE value="inheritance update, Device.java, Phone.java, Car.java added" />
     <MESSAGE value="zad 1, 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="zad 1, 2" />
+    <MESSAGE value="Zadanie 3 i 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 3 i 4" />
   </component>
 </project>

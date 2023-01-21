@@ -39,7 +39,14 @@ public class Human extends Animal {
     }
 
     public void setCar(Car car) {
-        this.car = car;
+        if (this.salary > car.value) {
+            System.out.println("Auto zostało kupione za gotowke");
+            this.car = car;
+        } else if (this.salary > car.value / 12) {
+            System.out.println("udało się kupić na kredyt (no trudno)");
+            this.car = car;
+        } else
+            System.out.println("zapisz sie na studia i znajdz nową robote albo idz po\n" + "podwyzke");
     }
 
     public Animal getPet() {
@@ -52,17 +59,17 @@ public class Human extends Animal {
 
     public double getSalary() {
         Date date = new Date();
-        System.out.println("Data pobrania wypłaty" + date + " Wartość: " + salary);
+        System.out.println("Data pobrania wyplaty" + date + " Wartosc: " + salary);
         return salary;
     }
 
     public void setSalary(double salary) {
         if (salary < 0)
-            System.out.println("Ujemna wartość wypłaty");
+            System.out.println("Ujemna wartosc wyplaty");
         else {
             System.out.println("nowe dane zostaly wyslane do systemu ksiegowego");
             System.out.println("konieczne jest odebranie aneksu do umowy od Pani Hani z kadr");
-            System.out.println("ZUS i US zostały powiadomione o zmiany wyplaty, nie ma sensu ukrywac dochodu");
+            System.out.println("ZUS i US zostaly powiadomione o zmiany wyplaty, nie ma sensu ukrywac dochodu");
             this.salary = salary;
         }
     }
