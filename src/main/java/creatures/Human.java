@@ -1,3 +1,5 @@
+package creatures;
+
 import devices.Car;
 
 import java.util.Date;
@@ -104,7 +106,7 @@ public class Human extends Animal {
 
     @Override
     public String toString() {
-        return "Human{" +
+        return "creatures.Human{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", car=" + car +

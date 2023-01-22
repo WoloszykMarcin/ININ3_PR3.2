@@ -1,4 +1,6 @@
-public class Animal implements Salleable {
+package creatures;
+
+public abstract class Animal implements Salleable, Feedable{
     private String species;
     private String name;
     private double weight;
@@ -24,12 +26,23 @@ public class Animal implements Salleable {
         this.alive = alive;
     }
 
+    @Override
     public void feed() {
-        if(!this.alive) {
-            System.out.println("troche za pozno na jedzenie");
-        } else {
+        if(this.alive) {
             this.weight += 0.5;
             System.out.println("Najedzone");
+        } else {
+            System.out.println("troche za pozno na jedzenie");
+        }
+    }
+
+    @Override
+    public void feed(double foodWeight) {
+        if(this.alive) {
+            this.weight += foodWeight;
+            System.out.println("Najedzone");
+        } else {
+            System.out.println("troche za pozno na jedzenie");
         }
     }
 
@@ -62,9 +75,13 @@ public class Animal implements Salleable {
         return alive;
     }
 
+    public void setAlive(boolean alive) {
+        this.alive = alive;
+    }
+
     @Override
     public String toString() {
-        return "Animal{" +
+        return "creatures.Animal{" +
                 "species='" + species + '\'' +
                 ", name='" + name + '\'' +
                 ", weight=" + weight +

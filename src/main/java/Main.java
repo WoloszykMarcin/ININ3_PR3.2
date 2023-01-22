@@ -1,3 +1,5 @@
+import creatures.Animal;
+import creatures.Human;
 import devices.Car;
 
 public class Main {
