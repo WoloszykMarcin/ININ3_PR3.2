@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="421e3796-b350-45d9-a6f7-5c45c4a3f0a1" name="Changes" comment="Zadanie 11">
+    <list default="true" id="421e3796-b350-45d9-a6f7-5c45c4a3f0a1" name="Changes" comment="Zadanie 12">
+      <change afterPath="$PROJECT_DIR$/src/main/java/devices/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/devices/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devices/Benzine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Benzine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/devices/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devices/Diesel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Diesel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devices/Electric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Electric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devices/LPG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/LPG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devices/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Phone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,21 +40,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/MyProjects/ININ3_PR3.2/src/main/java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "D:/MyProjects/ININ3_PR3.2/src/main/java/devices",
+    "last_opened_file_path": "D:/MyProjects/ININ3_PR3.2/src/main/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="creatures" />
@@ -62,6 +68,7 @@
       <recent name="D:\MyProjects\ININ3_PR3.2\src\main\java\devices" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="devices" />
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -145,7 +152,7 @@
       <workItem from="1674316442931" duration="6812000" />
       <workItem from="1674368567738" duration="1916000" />
       <workItem from="1674481656335" duration="19000" />
-      <workItem from="1675327562511" duration="9977000" />
+      <workItem from="1675327562511" duration="11305000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1670069819685</created>
@@ -266,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675336473724</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Zadanie 12">
+      <created>1675337911346</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675337911346</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +313,7 @@
     <MESSAGE value="Zadanie 9" />
     <MESSAGE value="Zadanie 10" />
     <MESSAGE value="Zadanie 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 11" />
+    <MESSAGE value="Zadanie 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 12" />
   </component>
 </project>

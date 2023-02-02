@@ -94,4 +94,6 @@ public abstract class Device implements creatures.Salleable {
                 ", yearOfProducer=" + yearOfProducer +
                 '}';
     }
+
+    public abstract void installApplication(Application app) throws Exception;
 }

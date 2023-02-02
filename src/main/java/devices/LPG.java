@@ -25,4 +25,9 @@ public class LPG extends Car{
     public void sell(Human seller, Human buyer, double price) {
 
     }
+
+    @Override
+    public void installApplication(Application app) throws Exception {
+
+    }
 }

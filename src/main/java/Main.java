@@ -87,5 +87,23 @@ public class Main {
 
         phone.installAnApp(git);
 
+        Phone samsung = new Phone("Samsung", "S20", 2020, 4000.0);
+        Application app1 = new Application("App 1", "1.0", 10);
+        Application app2 = new Application("App 2", "2.0", 20);
+        Application app3 = new Application("App 3", "1.0", 5);
+        Application app4 = new Application("App 4", "2.0", 0);
+
+        try {
+            samsung.installApplication(app1);
+            samsung.installApplication(app2);
+            samsung.installApplication(app3);
+            samsung.installApplication(app4);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println("Is App 1 installed: " + samsung.isApplicationInstalled(app1));
+        System.out.println("Is App 2 installed: " + samsung.isApplicationInstalledByName("App 2"));
+
     }
 }
