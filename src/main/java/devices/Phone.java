@@ -1,5 +1,7 @@
 package devices;
 
+import creatures.Human;
+
 import java.net.URL;
 import java.util.List;
 
@@ -11,8 +13,8 @@ public class Phone extends Device {
     private double screenSize;
     private String os;
 
-    public Phone(String producer, String model, int yearOfProducer, double screenSize, String os) {
-        super(producer, model, yearOfProducer);
+    public Phone(String producer, String model, int yearOfProducer, double value, double screenSize, String os) {
+        super(producer, model, yearOfProducer, value);
         this.screenSize = screenSize;
         this.os = os;
     }
@@ -61,5 +63,10 @@ public class Phone extends Device {
                 ", screenSize=" + screenSize +
                 ", os='" + os + '\'' +
                 '}';
+    }
+
+    @Override
+    public void sell(Human seller, Human buyer, double price) {
+
     }
 }

@@ -9,13 +9,13 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws MalformedURLException {
-        Car passat = new LPG("VW", "passerati", 2001);
+        Car passat = new LPG("VW", "passerati", 2001, 10000);
         passat.setMillage(78000.0);
         System.out.println(passat.getProducer());
         System.out.println(passat.getModel());
         System.out.println(passat.getYearOfProduction());
 
-        Car fiat = new Diesel("fiat", "bravo", 2010);
+        Car fiat = new Diesel("fiat", "bravo", 2010, 30000);
         fiat.setMillage(312321.5);
 
         System.out.println("Model auta: " + fiat.getModel());
@@ -31,16 +31,19 @@ public class Main {
         System.out.println(kacper.getSpecies());
 
 
+        System.out.println("Kupowanie auta");
         Human human = new Human("Marek");
-        human.setCar(new Benzine("Mercedes", "AMG GTR PRO", 2022));
+        human.setCar(new Benzine("Mercedes", "AMG GTR PRO", 2022, 0.0, 1_400_000), 0);
+        human.setCar(new Benzine("Lamborghini", "Huracan", 2020, 5.0, 1_700_000), 1);
 
-        System.out.println(human.getCar());
+        System.out.println("Wartosc wszystkich samochodow w garazu");
+        System.out.println(human.getValueOfAllCars());
 
         human.setSalary(50000);
         System.out.println(human.getSalary());
 
         Car huracan = new Benzine("Lamborghini", "Huracan", 2022, 5.0, 1_700_000);
-        human.setCar(huracan);
+        human.setCar(huracan, 5);
 
         Car huracan2 = new Benzine("Lamborghini", "Huracan", 2022, 5.0, 1_700_000);
         System.out.println(huracan == huracan2); // porownanie hashcode zwraca false
@@ -61,7 +64,7 @@ public class Main {
         fiat.refuel();
         huracan.refuel();
 
-        Phone phone = new Phone("Samsung", "S22", 2022,13, "Android");
+        Phone phone = new Phone("Samsung", "S22", 2022,4000, 13, "Android");
         System.out.println(phone);
 
         phone.installAnApp("Hello Kitty");

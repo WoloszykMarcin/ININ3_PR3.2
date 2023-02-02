@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="421e3796-b350-45d9-a6f7-5c45c4a3f0a1" name="Changes" comment="Zadanie 9">
-      <change afterPath="$PROJECT_DIR$/src/main/java/devices/Benzine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/devices/Diesel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/devices/Electric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/devices/LPG.java" afterDir="false" />
+    <list default="true" id="421e3796-b350-45d9-a6f7-5c45c4a3f0a1" name="Changes" comment="Zadanie 10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Salleable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Salleable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devices/Benzine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Benzine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/devices/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devices/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Device.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/devices/DeviceRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/DeviceRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devices/Diesel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Diesel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devices/Electric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Electric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devices/LPG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/LPG.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/devices/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devices/Phone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +153,7 @@
       <workItem from="1674316442931" duration="6812000" />
       <workItem from="1674368567738" duration="1916000" />
       <workItem from="1674481656335" duration="19000" />
-      <workItem from="1675327562511" duration="2497000" />
+      <workItem from="1675327562511" duration="8359000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1670069819685</created>
@@ -257,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674370160025</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Zadanie 10">
+      <created>1675330148569</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1675330148569</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +298,7 @@
     <MESSAGE value="Zadanie 7" />
     <MESSAGE value="Zadanie 8" />
     <MESSAGE value="Zadanie 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 9" />
+    <MESSAGE value="Zadanie 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 10" />
   </component>
 </project>

@@ -1,8 +1,11 @@
 package devices;
 
+import creatures.Human;
+
 public class Benzine extends Car{
-    public Benzine(String producer, String model, int yearOfProducer) {
-        super(producer, model, yearOfProducer);
+
+    public Benzine(String producer, String model, int yearOfProducer, double value) {
+        super(producer, model, yearOfProducer, value);
     }
 
     public Benzine(String producer, String model, int yearOfProducer, Double millage, double value) {
@@ -16,5 +19,10 @@ public class Benzine extends Car{
     @Override
     public void refuel() {
         System.out.println("laduje benzyne");
+    }
+
+    @Override
+    public void sell(Human seller, Human buyer, double price) {
+
     }
 }

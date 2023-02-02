@@ -1,8 +1,9 @@
 package devices;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public abstract class Car extends Device{
+public abstract class Car extends Device {
     private String producer;
     private String model;
     private Integer yearOfProduction;
@@ -10,18 +11,18 @@ public abstract class Car extends Device{
     private double value;
     private String fuelType;
 
-    public Car(String producer, String model, int yearOfProducer) {
-        super(producer, model, yearOfProducer);
+    public Car(String producer, String model, int yearOfProducer, double value) {
+        super(producer, model, yearOfProducer, value);
     }
 
     public Car(String producer, String model, int yearOfProducer, Double millage, double value) {
-        super(producer, model, yearOfProducer);
+        super(producer, model, yearOfProducer, value);
         this.millage = millage;
         this.value = value;
     }
 
     public Car(String producer, String model, int yearOfProducer, Double millage, double value, String fuelType) {
-        super(producer, model, yearOfProducer);
+        super(producer, model, yearOfProducer, value);
         this.millage = millage;
         this.value = value;
         this.fuelType = fuelType;
