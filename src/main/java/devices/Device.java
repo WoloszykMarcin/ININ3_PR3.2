@@ -15,6 +15,16 @@ public abstract class Device implements creatures.Salleable {
         this.value = value;
     }
 
+    public static Integer getParkingLotNumberIfBuyerHasAFreeSpace(Human buyer) throws Exception {
+            for (int i = 0; i < buyer.getGarage().length; i++) {
+                if (buyer.getGarage()[i] == null) {
+                    System.out.println(i);
+                    return i;
+                }
+            }
+            return null;
+    }
+
     @Override
     public void sell(Human seller, Human buyer, double price) throws Exception {
         boolean hasCar = false;

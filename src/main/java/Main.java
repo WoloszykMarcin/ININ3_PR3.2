@@ -36,6 +36,12 @@ public class Main {
         human.setCar(new Benzine("Mercedes", "AMG GTR PRO", 2022, 0.0, 1_400_000), 0);
         human.setCar(new Benzine("Lamborghini", "Huracan", 2020, 5.0, 1_700_000), 1);
 
+        try {
+            human.setCar(fiat, Device.getParkingLotNumberIfBuyerHasAFreeSpace(human));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         System.out.println("Wartosc wszystkich samochodow w garazu");
         System.out.println(human.getValueOfAllCars());
 
