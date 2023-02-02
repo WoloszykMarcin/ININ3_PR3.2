@@ -2,7 +2,7 @@ package devices;
 
 import java.util.Objects;
 
-public class Car extends Device{
+public abstract class Car extends Device{
     private String producer;
     private String model;
     private Integer yearOfProduction;
@@ -26,6 +26,8 @@ public class Car extends Device{
         this.value = value;
         this.fuelType = fuelType;
     }
+
+    public abstract void refuel();
 
     //    public Car(String producer, String model, Integer yearOfProduction) {
 //        this.producer = producer;
@@ -95,7 +97,6 @@ public class Car extends Device{
         this.millage += 10.0;
         System.out.println("Aktualny przebieg to: " + this.millage);
     }
-
 
     @Override
     public boolean equals(Object o) {

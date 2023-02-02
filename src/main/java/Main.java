@@ -1,16 +1,21 @@
 import creatures.Animal;
 import creatures.Human;
-import devices.Car;
+import devices.*;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
-        Car passat = new Car("VW", "passerati", 2001);
+    public static void main(String[] args) throws MalformedURLException {
+        Car passat = new LPG("VW", "passerati", 2001);
         passat.setMillage(78000.0);
         System.out.println(passat.getProducer());
         System.out.println(passat.getModel());
         System.out.println(passat.getYearOfProduction());
 
-        Car fiat = new Car("fiat", "bravo", 2010);
+        Car fiat = new Diesel("fiat", "bravo", 2010);
         fiat.setMillage(312321.5);
 
         System.out.println("Model auta: " + fiat.getModel());
@@ -27,17 +32,17 @@ public class Main {
 
 
         Human human = new Human("Marek");
-        human.setCar(new Car("Mercedes", "AMG GTR PRO", 2022));
+        human.setCar(new Benzine("Mercedes", "AMG GTR PRO", 2022));
 
         System.out.println(human.getCar());
 
         human.setSalary(50000);
         System.out.println(human.getSalary());
 
-        Car huracan = new Car("Lamborghini", "Huracan", 2022, 5.0, 1_700_000);
+        Car huracan = new Benzine("Lamborghini", "Huracan", 2022, 5.0, 1_700_000);
         human.setCar(huracan);
 
-        Car huracan2 = new Car("Lamborghini", "Huracan", 2022, 5.0, 1_700_000);
+        Car huracan2 = new Benzine("Lamborghini", "Huracan", 2022, 5.0, 1_700_000);
         System.out.println(huracan == huracan2); // porownanie hashcode zwraca false
         System.out.println(huracan.equals(huracan2)); // porownanie equals zwraca true
 
@@ -51,6 +56,27 @@ public class Main {
         Human seller = new Human("Seller", "seller", huracan, null, 10_000, 50.0, 10_000);
 
         buyer.sell(seller, buyer, 50_000);
+
+        passat.refuel();
+        fiat.refuel();
+        huracan.refuel();
+
+        Phone phone = new Phone("Samsung", "S22", 2022,13, "Android");
+        System.out.println(phone);
+
+        phone.installAnApp("Hello Kitty");
+        phone.installAnApp("Hello Kitty", "1.3.2");
+
+        List<String> appsToInstall = new ArrayList<String>();
+        appsToInstall.add("Facebook");
+        appsToInstall.add("Instagram");
+        appsToInstall.add("HelloKitty");
+
+        phone.installAnApp(appsToInstall);
+
+        URL git = new URL("https", "git-scm.com", "https://github.com/git/git");
+
+        phone.installAnApp(git);
 
     }
 }
